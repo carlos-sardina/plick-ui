@@ -1,0 +1,12 @@
+{
+  "name": "@plick/ui-components",
+  "version": "1.0.0",
+  "description": "ui lib",
+  "main": "index.js",
+  "scripts": {},
+  "author": "carlos sardina",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.2.2"
+  }
+}

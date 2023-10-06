@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    // Language and Environment
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+
+    // Language options
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Modules
+    "module": "esnext",
+    "jsx": "react-jsx",
+
+    // Module options
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "noEmit": true,
+
+    // JS Support
+    "allowJs": false,
+
+    // Emit
+    "outDir": "dist",
+    "declaration": true,
+    "declarationDir": "dist/dts",
+    "emitDeclarationOnly": true,
+
+    // Type Checking
+    "strict": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noFallthroughCasesInSwitch": true,
+  },
+  "include": ["src"]
+}
