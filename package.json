@@ -2,12 +2,12 @@
   "name": "@plick/ui-components",
   "version": "1.0.0",
   "description": "ui lib",
-  "files": [
-    "dist"
-  ],
   "main": "./dist/index.js",
   "module": "./dist/index.esm.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rollup -c"
   },
