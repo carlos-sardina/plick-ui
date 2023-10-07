@@ -10,7 +10,7 @@
     // Language options
     "skipLibCheck": true,
     "esModuleInterop": true,
-    
+
     // Type Checking
     "strict": true,
     "forceConsistentCasingInFileNames": true,
