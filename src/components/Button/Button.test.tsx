@@ -11,7 +11,7 @@ describe('Button Component', () => {
     );
 
     const buttonElement = getByText(buttonText);
-    expect(buttonElement).toBeInTheDocument();
+    expect(buttonElement).not.toBeInTheDocument();
 
     fireEvent.click(buttonElement);
     expect(onClickMock).toHaveBeenCalledTimes(1);
