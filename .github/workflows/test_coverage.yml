@@ -6,6 +6,8 @@ on:
 
 jobs:
   test_coverage:
+    permissions: write-all
+    name: Coverage report
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
