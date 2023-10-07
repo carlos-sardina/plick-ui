@@ -31,6 +31,6 @@
     "declaration": true,
     "declarationDir": "dist/dts",
     "baseUrl": "."
-  },
-  "include": ["src", "./setupTest.ts"]
+  },"include": ["src"]
+  
 }
