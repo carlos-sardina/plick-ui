@@ -1,31 +1,25 @@
-name: PR Checks
+name: PR
 
 on:
   pull_request:
     types: [opened, synchronize]
 
 jobs:
-  test_coverage:
-    permissions: write-all
-    name: Coverage report
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: ArtiomTr/jest-coverage-report-action@v2
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          test-script: npm run test:coverage
-
   check:
-    runs-on: ubuntu-22.04
-    name: Code quality
-
+    permissions: write-all
+    runs-on: ubuntu-latest
+    name: Code quality & Test
     steps:
       - uses: actions/checkout@v3
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 16
+
+      - uses: ArtiomTr/jest-coverage-report-action@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          test-script: npm run test:coverage
 
       - name: Install dependencies
         run: npm ci
@@ -38,3 +32,6 @@ jobs:
 
       - name: Run linter
         run: npm run lint
+
+      - name: Run Test
+        run: npm run test
