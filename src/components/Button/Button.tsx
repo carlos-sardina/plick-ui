@@ -1,5 +1,10 @@
-export const Button = () => {
+export type IButton = {
+  text: string;
+  onClick: () => void;
+}
+
+export const Button = ({text, onClick}: IButton) => {
   return (
-    <div>Button</div>
+    <button onClick={onClick}>{text}</button>
   )
 }

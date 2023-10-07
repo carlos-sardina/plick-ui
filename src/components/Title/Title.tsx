@@ -1,5 +1,9 @@
-export const Title = () => {
+export type ITitle = {
+  text: string;
+}
+
+export const Title = ({text}: ITitle) => {
   return (
-    <div>Title</div>
+    <h1>{text}</h1>
   )
 }
