@@ -10,6 +10,9 @@ const config: Config.InitialOptions = {
   coveragePathIgnorePatterns: [
     '.stories.tsx',
   ],
+  moduleNameMapper: {
+    "^@plick-test-utils$": "<rootDir>/src/plickTestUtils.ts"
+  }
 };
 
 export default config;

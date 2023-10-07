@@ -1,5 +1,4 @@
-import '@testing-library/jest-dom';
-import { render, fireEvent } from '../../../plick-test-utils';
+import { render, fireEvent } from '@plick-test-utils';
 import { Button } from './Button';
 
 describe('Button Component', () => {

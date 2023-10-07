@@ -1,5 +1,4 @@
-import '@testing-library/jest-dom';
-import { render } from '../../../plick-test-utils';
+import { render } from '@plick-test-utils';
 import { Title } from './Title';
 
 describe('Title Component', () => {

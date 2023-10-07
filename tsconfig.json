@@ -30,7 +30,10 @@
     "outDir": "dist",
     "declaration": true,
     "declarationDir": "dist/dts",
-    "baseUrl": "."
-  },"include": ["src"]
-  
+    "baseUrl": "./",
+    "paths": {
+      "@plick-test-utils": ["./src/plickTestUtils.ts"]
+    }
+  },
+  "include": ["src"]
 }
