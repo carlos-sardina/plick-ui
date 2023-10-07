@@ -7,7 +7,7 @@ describe('Button Component', () => {
     const onClickMock = jest.fn();
 
     const { getByText } = render(
-      <Button text={buttonText} onClick={onClickMock} />
+      <Button text={buttonText} onClick={onClickMock} />,
     );
 
     const buttonElement = getByText(buttonText);

@@ -1,0 +1,8 @@
+jest.config.ts
+rollup.config.mjs
+dist
+node_modules
+.github
+report.json
+package-lock.json
+package.json

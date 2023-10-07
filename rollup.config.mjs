@@ -10,12 +10,12 @@ const config = [
     input: './src/index.ts',
     output: [
       {
-        file: "./dist/index.js",
+        file: './dist/index.js',
         format: 'cjs',
         sourcemap: true,
       },
       {
-        file: "./dist/index.esm.js",
+        file: './dist/index.esm.js',
         format: 'esm',
         sourcemap: true,
       },
@@ -30,7 +30,7 @@ const config = [
   },
   {
     input: './dist/dts/index.d.ts',
-    output: [{ file: "./dist/index.d.ts", format: 'esm' }],
+    output: [{ file: './dist/index.d.ts', format: 'esm' }],
     plugins: [dts(), del({ hook: 'buildEnd', targets: './dist/dts' })],
   },
 ];
