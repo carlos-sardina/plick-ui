@@ -12,8 +12,7 @@
     "build": "rollup -c",
     "start": "storybook dev -p 6006",
     "test": "jest test --watchAll=false --coverage",
-    "test:coverage": "react-scripts test --silent --ci --watchAll=false --coverage --json --outputFile=./report.json",
-    "prepare": "husky install"
+    "test:coverage": "jest test --silent --ci --watchAll=false --coverage --json --outputFile=./report.json"
   },
   "author": "carlos sardina",
   "license": "ISC",
