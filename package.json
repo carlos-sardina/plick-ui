@@ -10,9 +10,10 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "test": "jest test --watchAll=false --coverage"
+    "start": "storybook dev -p 6006",
+    "test": "jest test --watchAll=false --coverage",
+    "test:coverage": "react-scripts test --silent --ci --watchAll=false --coverage --json --outputFile=./report.json",
+    "prepare": "husky install"
   },
   "author": "carlos sardina",
   "license": "ISC",
